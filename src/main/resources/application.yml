@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ntt-data-challenge-eureka-server
+server:
+  port: 8761
+
+# eureka server configuration
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  instance:
+    hostname: localhost
+  server:
+    renewal-percent-threshold: 0.90
+
